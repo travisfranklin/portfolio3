@@ -1,140 +1,505 @@
-@import "~bulma/sass/utilities/initial-variables"
+// VARIABLES
 
-// Config vars
-// Kaldi logo brand color: #FD461E
-$kaldi-red: #D64000
-$kaldi-red-invert: #fff
+$primary: #469fdb
+$secondary: #5951c6
+$primary-invert: #eeeefa
+$pop: #ffdd57
+$black: #625f7c
+$blacker: #1a1a25
 
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
-$body-color: #333
-$black: #2b2523
+$break-small: 620px
+$break-large: 900px
 
-.navbar .navbar-menu
-  box-shadow:none !important
 
-.content .taglist
+// GLOBAL ELEMENTS
+
+html
+  background-color: #fff
+  font-size: 16px
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+  min-width: 300px
+  text-rendering: optimizeLegibility
+  -webkit-text-size-adjust: 100%
+  -moz-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%
+  text-size-adjust: 100%
+  overflow-x: hidden
+
+body
+  margin: 0
+  padding: 0
+  color: $black
+  font-size: 1em
+  font-weight: 400
+  line-height: 1.5
+  overflow-x: hidden
+
+
+a
+  color: inherit
+  cursor: pointer
+  text-decoration: none
+
+h1, h2, h3, h4, h5, h6,
+  font-size: 100%
+  font-weight: 600
+  margin: 0
+  padding: 0
+
+section
+  padding: 0 8rem 3rem
+  display: block
+
+
+// TOP LINKS
+
+.linkContainer
+  position: absolute
+  width: 100%
+  height: 3rem
+  right: 0
+  top: 0
+  display: flex
+  justify-content: flex-end
+  align-items: stretch
+  align-content: center
+  z-index: 3
+
+.linkList
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  align-content: center
+  margin: 0 1rem
+  padding: 0
+
+.linkItem
   list-style: none
-  margin-bottom: 0
-  margin-left: 0
-  margin-right: 1.5rem
-  margin-top: 1.5rem
-  display: flex
-  flex-wrap: wrap
-  justify-content: left
-  align-items: center
-  li
-    padding: 0 2rem 1rem 0
-    margin-bottom: 1.5rem
-    margin-top: 0
+  margin-left: 2px
 
-// Helper Classes
-.full-width-image-container
-  width: 100vw
-  height: 400px
+.link
+  background: transparent
+  border-radius: 2px
+  color: rgb(255, 255, 255)
+  font-size: 10px
+  font-weight: 600
+  letter-spacing: 2px
+  padding: 4px 8px
+  text-transform: uppercase
+  line-height: 12px
+  cursor: pointer
+
+.link:hover
+  background: $pop
+  border-radius: 2px
+  color: rgba(0, 0, 0, 0.7)
+
+.fullwidth
+  padding: 0rem !important
+  max-width: 100%;
+
+.container
+  flex-grow: 1
+  margin: 0 auto
   position: relative
-  left: 50%
-  right: 50%
-  margin: 2em -50vw
-  background-size: cover
-  background-position: bottom
+  width: auto
+  padding: 1.5rem 4rem
+
+.imgContainer
   display: flex
+  flex-direction: row
+  flex-wrap: wrap
   justify-content: center
-  align-items: center
+  overflow: hidden
+  margin-bottom: 2rem
 
-.full-width-image
-    width: 100vw
-    height: 400px
-    background-size: cover
-    background-position: bottom
-    display: flex
-    justify-content: center
-    align-items: center
+  .imgContainer-inner
+    flex: 1 1 100%
+    height: 30vw
+    min-height: 200px
+    background-color: $primary
 
-.btn
-    display: inline-block
-    padding: 12px 16px 10px
-    font-size: 18px
-    font-size: 1rem
+
+// HEADER
+
+.header
+  align-items: stretch
+  display: flex
+  position: relative
+  flex-direction: column
+  justify-content: space-between
+  background-size: cover
+  background-attachment: fixed
+  color: $primary-invert
+  height: 550px
+
+  @keyframes wave 
+    0%
+      transform: rotate(0deg)
+    100%
+      transform: rotate(360deg)
+
+
+  // WAVES
+  .wave 
+    position: absolute
+    height: 8790px
+    width: 8790px
+    opacity: 1
+    left: 0
+    top: 0
+    margin-left: -4200px
+    margin-top: -8320px
+    background: $black
+    border-radius: 48%
+    animation: wave 45s infinite linear
+
+  .wave:nth-child(2)
+    top: 30px
+    animation-duration: 20s
+    opacity: 0.6
+    background: $secondary
+    border-radius: 47.9%
+
+
+  .wave:nth-child(3) 
+    animation-duration: 15s
+    opacity: 0.6
+    background: #ccc
+    top: 20px
+
+
+  // INTERIOR TEXT
+  .content
+    color: $primary-invert
+    z-index: 2
+
+    .inner
+      max-width: 375px
+      flex-grow: 1
+      margin: 7em 0
+      position: relative
+      width: auto
+    
+    .hello
+      font-size: 5em
+      line-height: 0.9em
+      letter-spacing: -0.02em
+      margin-left: -5px
+      margin-bottom: 1.5rem
+
+    .hello::before
+      background: $pop
+      border-radius: 2px
+      bottom: 102%
+      color: rgba(0, 0, 0, 0.7)
+      content: "Hi! My name is"
+      display: inline-block
+      font-size: 10px
+      font-weight: 600
+      letter-spacing: 2px
+      margin-left: 2px
+      padding: 4px 8px
+      position: absolute
+      text-transform: uppercase
+      vertical-align: top
+      line-height: 12px
+  
+  .blurb
     line-height: 1.25
-    background-color: #fff
-    border-radius: .25rem
-    text-decoration: none
-    font-weight: 700
-    color: #CC3700
+    color: $primary-invert
+    margin-bottom: 3rem
+
+  .title
+    color: $primary-invert
+    font-size: 1.5rem
+    font-weight: 600
+    line-height: 1.25
+    margin-bottom: .5rem
+
+
+// FOOTER
+
+.footer
+  display: flex
+  position: relative
+  color: $primary-invert
+  height: 200px
+  overflow: hidden
+
+  // WAVES
+  @keyframes wave 
+    0%
+      transform: rotate(0deg)
+    100%
+      transform: rotate(360deg)
+
+  .wave 
+    position: absolute
+    height: 8790px
+    width: 8790px
+    opacity: 1
+    left: 0
+    bottom: -8690px
+    margin-left: -4200px
+    background: $black
+    border-radius: 48%
+    animation: wave 45s infinite linear
+    z-index: 0
+
+  .wave:nth-child(2),
+  .wave:nth-child(3) 
+    bottom: -8670px
+
+  .wave:nth-child(2)
+    animation-duration: 20s
+    opacity: 0.6
+    background: $secondary
+    border-radius: 47.9%
+    bottom: -8670px
+
+  .wave:nth-child(3) 
+    animation-duration: 15s
+    opacity: 0.6
+    background: #ccc
+    border-radius: 48%
+    bottom: -8680px
+    
+  .content
+    margin: 0 auto
+    max-width: 900px
+    z-index: 2
+    display: flex
+    justify-content: flex-start
+
+    .inner
+      max-width: 375px
+      flex-grow: 1
+      margin: 7em 0
+      position: relative
+      width: auto
+      font-weight: 900
+      font-size: 14px
+
+
+// FORMATTING
+
+.subtitle
+  color: $black
+  font-size: 1.25rem
+  font-weight: 400
+  line-height: 1.25
+
+.title
+  color: $black
+  font-size: 1.5rem
+  font-weight: 600
+  line-height: 1.25
+
+.bloghead
+  font-size: 3rem
+  font-weight: 600
+  line-height: 1.15em
+  stroke: 2px solid outside
+
+.areahead
+  font-size: 1.5rem
+
+
+// TAGS
+
+.tagOuterContainer
+  position: relative
+  width: 140px
+
+.tagInnerContainer
+  position: absolute
+  left: -9rem
+  top: 0
+  margin: 0
+
+.tagList
+  text-align: right
+  display: flex
+  flex-direction: column
+  flex-wrap: nowrap
+  justify-content: flex-start
+  align-items: flex-end
+  margin-bottom: -6px
+
+.tag
+  background: $pop
+  border-radius: 2px
+  color: rgba(0, 0, 0, 0.7)
+  display: inline-block
+  font-size: 10px
+  font-weight: 600
+  letter-spacing: 2px
+  padding: 4px 8px
+  margin-bottom: 6px
+  position: relative
+  text-transform: uppercase
+  vertical-align: top
+  line-height: 12px
+
+.tagHeader
+  color: $black
+  display: inline-block
+  font-size: 10px
+  font-weight: 900
+  letter-spacing: 2px
+  margin-bottom: 6px
+  position: relative
+  text-transform: uppercase
+  vertical-align: top
+  line-height: 12px
+
+
+// MEDIA QUERIES
+
+@media screen and (max-width: $break-small)
+
+  section
+    padding: 0 1em 2em
+
+  .areahead
     text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #CC3700
-    box-shadow: inset 0 0 0 2px #f40
-    -webkit-transition: all .15s ease
-    transition: all .15s ease
 
-.margin-top-0
-  margin-top: 0 !important
+  // HEADER
 
-.navbar-item .icon
-  color: $primary
-// Override for use of svg's from https://simpleicons.org/
-.icon svg
-  width: 1.5rem
-  height: 1.5rem
-  fill: currentColor
-.navbar-brand .navbar-item.logo
-  padding: 0 1rem
-footer.footer
-  padding: 3rem 0rem 0rem
-  background-color: transparent
+  .header
+    
+    .content
+      display: flex
+      justify-content: center
 
-//Menu overrides
-$menu-item-color: $white-ter
-$menu-item-hover-color: $black !important
-$menu-item-hover-background-color: $black
-$menu-item-active-color: $kaldi-red-invert
-$menu-item-active-background-color:	$kaldi-red-invert
-$menu-list-border-left: 1px solid $kaldi-red-invert
-$menu-label-color: $white-ter
+      .inner
+        margin: 7em 1em 7em 1em
+
+    .wave
+      border-radius: 49%
 
 
-.menu-label
-  font-size: 1em !important
-  text-align: left
-.menu-list
-  list-style: none !important
-  text-align: left
-.social
-  padding: 2em
-.social a
-    padding: .5em .5em .3em .5em
-    border-radius: 1em
-    background-color: $white-ter
-    margin: .5em
-    width: 1em
-    height: 1em
-    vertical-align: middle
-    display: inline
+  .title
+    font-size: 1.25rem !important
 
-// blog roll
-.blog-list-item.is-featured
-  background-color: #d6400033;
-.blog-list-item header
-  display: flex;
-  margin-bottom: 1em;
-.blog-list-item .featured-thumbnail
-  flex-basis: 35%;
-  margin: 0 1.5em 0 0;
+  // TAGS
+  .tagOuterContainer 
+    width: unset !important
+ 
+    .tagInnerContainer 
+      position: relative !important
+      left: unset !important
+      top: unset !important
+      margin: unset !important
 
+      .tagList 
+        text-align: left
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: flex-start
+        align-items: center
+        padding-inline-start: 0
 
-@import "~bulma"
+        .tagHeader
+          width: 100%
+          margin-bottom: 10px
 
+        .tag
+          margin-right: 6px
 
-// responsiveness
-+tablet-only
-  .blog-list-item .featured-thumbnail
-    flex-basis: 50%;
+  .bloghead
+    font-size: 1.75em
 
-+mobile
-  .blog-list-item header
-    display: block
-  .blog-list-item .featured-thumbnail
-    text-align: center;
-    max-width: 70%;
-    margin: 0 0 1em;
+@media screen and (min-width: $break-large)
+
+  section
+    max-width: 900px
+    margin: 0 auto
+  // HEADER
+
+  .header
+    margin-top: 7em 
+    height: 480px
+
+    // WAVES
+    .wave 
+      margin-left: -3900px
+      margin-top: -8400px
+
+    // INTERIOR TEXT
+    .content
+      color: $primary-invert
+      z-index: 2
+
+      .inner
+        max-width: 375px
+        flex-grow: 1
+        margin: 0
+        position: relative
+        width: auto
+      
+      .hello
+        font-size: 5em
+        line-height: 0.9em
+        letter-spacing: -0.02em
+        margin-left: -5px
+        margin-bottom: 1.5rem
+
+      .hello::before
+        background: $pop
+        border-radius: 2px
+        bottom: 102%
+        color: rgba(0, 0, 0, 0.7)
+        content: "Hi! My name is"
+        display: inline-block
+        font-size: 10px
+        font-weight: 600
+        letter-spacing: 2px
+        margin-left: 2px
+        padding: 4px 8px
+        position: absolute
+        text-transform: uppercase
+        vertical-align: top
+        line-height: 12px
+    
+    .blurb
+      line-height: 1.25
+      color: $primary-invert
+      margin-bottom: 3rem
+
+    .title
+      color: $primary-invert
+      font-size: 1.5rem
+      font-weight: 600
+      line-height: 1.25
+      margin-bottom: .5rem
+
+  .article
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+    .imgContainer
+      width: 100%
+
+  // FOOTER
+  .footer
+    display: flex
+    position: relative
+    color: $primary-invert
+    height: 200px
+    overflow: hidden
+
+    // WAVES
+    @keyframes wave 
+      0%
+        transform: rotate(0deg)
+      100%
+        transform: rotate(360deg)
+
+    .wave 
+      margin-left: -3600px
