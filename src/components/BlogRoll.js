@@ -10,13 +10,13 @@ class BlogRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="START BLOGROLL">
+      <div className="blogroll">
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="" key={post.id}>
+            <div  key={post.id}>
               <article
-                className={`START ARTICLE ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
+                className={`article${
+                  post.frontmatter.featuredpost ? ' is-featured' : ''
                 }`}
               >
                 {post.frontmatter.featuredimage ? (
@@ -31,7 +31,7 @@ class BlogRoll extends React.Component {
                     </div>
                   </div>
                 ) : null}
-                <section className="">
+                <section>
                   <h3 className="bloghead">
                     {post.frontmatter.title}
                   </h3>
