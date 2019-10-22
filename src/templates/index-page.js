@@ -17,9 +17,9 @@ export const IndexPageTemplate = ({
           <h1 className="hello">
             {title}
           </h1>
-          <h4 className="title">
+          <h2 className="title">
             {subheading}
-          </h4>
+          </h2>
           <p className="blurb">{mainpitch.description}</p>
         </div>
       </div>

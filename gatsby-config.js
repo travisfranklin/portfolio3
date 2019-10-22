@@ -37,6 +37,14 @@ module.exports = {
         plugins: [
           'gatsby-remark-images-grid',
           {
+            resolve: "gatsby-remark-images-grid",
+              options: {
+                  className: "myCustomClassName",
+                  gridGap: "10px",
+                  margin: "10px",
+              },
+          },
+          {
             resolve: 'gatsby-remark-relative-images',
             options: {
               name: 'uploads',
@@ -48,7 +56,8 @@ module.exports = {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
-              maxWidth: 2048,
+              maxWidth: 900,
+              quality: 70,
             },
           },
           {
@@ -70,7 +79,7 @@ module.exports = {
       resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
       options: {
         develop: true, // Activates purging in npm run develop
-        purgeOnly: ['/all.sass'], // applies purging only on the bulma css file
+        purgeOnly: ['/nothing.sass'], // applies purging only on the bulma css file
         printRejected: true,
       },
     }, // must be after other CSS plugins

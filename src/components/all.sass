@@ -11,11 +11,36 @@ $break-small: 620px
 $break-large: 900px
 
 
+// FIGHTING GATSBY RESPONSIVE IMAGES
+figure
+  margin-block-start: 1em
+  margin-block-end: 1em
+  margin-inline-start: 0
+  margin-inline-end: 0
+
+.gatsbyRemarkImagesGrid-grid 
+  margin: -5px
+
+.gatsby-resp-image-wrapper
+  margin-left: 0
+  margin-right: 0
+  margin: 5px
+  max-height: 650px;
+  overflow: hidden;
+  border: 1px solid #ececec
+
+gatsby-resp-image-background-image 
+  margin: -5px
+
+.gatsby-resp-image-image 
+  height: unset !important
+
+
 // GLOBAL ELEMENTS
 
 html
   background-color: #fff
-  font-size: 16px
+  font-size: 18px
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
   -moz-osx-font-smoothing: grayscale
   -webkit-font-smoothing: antialiased
@@ -51,6 +76,10 @@ h1, h2, h3, h4, h5, h6,
 h4
   font-size: 1.5rem
   font-weight: 400
+  margin-top: 2rem
+
+h5
+  margin-top: 2rem
 
 section
   padding: 0 8rem 3rem
@@ -151,27 +180,27 @@ section
     position: absolute
     height: 8790px
     width: 8790px
-    opacity: 1
+    opacity: .6
     left: 0
     top: 0
     margin-left: -4200px
-    margin-top: -8320px
-    background: $black
-    border-radius: 48%
+    margin-top: -8280px
+    background: $blacker
+    border-radius: 48.9%
     animation: wave 45s infinite linear
 
   .wave:nth-child(2)
     top: 30px
     animation-duration: 20s
     opacity: 0.6
-    background: $secondary
-    border-radius: 47.9%
+    background: $blacker
+    border-radius: 49.2%
 
 
   .wave:nth-child(3) 
     animation-duration: 15s
     opacity: 0.6
-    background: #ccc
+    background: $blacker
     top: 20px
 
 
@@ -181,9 +210,9 @@ section
     z-index: 2
 
     .inner
-      max-width: 375px
+      max-width: 414px
       flex-grow: 1
-      margin: 7em 0
+      margin: 5em 0
       position: relative
       width: auto
     
@@ -248,7 +277,7 @@ section
     left: 0
     bottom: -8690px
     margin-left: -4200px
-    background: $black
+    background: $blacker
     border-radius: 48%
     animation: wave 45s infinite linear
     z-index: 0
@@ -260,14 +289,14 @@ section
   .wave:nth-child(2)
     animation-duration: 20s
     opacity: 0.6
-    background: $secondary
+    background: $blacker
     border-radius: 47.9%
     bottom: -8670px
 
   .wave:nth-child(3) 
     animation-duration: 15s
     opacity: 0.6
-    background: #ccc
+    background: $blacker
     border-radius: 48%
     bottom: -8680px
     
@@ -279,7 +308,7 @@ section
     justify-content: flex-start
 
     .inner
-      max-width: 375px
+      max-width: 414px
       flex-grow: 1
       margin: 7em 0
       position: relative
@@ -311,6 +340,16 @@ section
 
 .areahead
   font-size: 1.5rem
+
+.textWrapper
+  padding-bottom: 2rem
+
+.textWrapper:after
+  text-align: center
+  content: "•  •  •  •  •"
+  display: block
+  color: #ccc
+  width: 100%
 
 
 // TAGS
@@ -386,7 +425,7 @@ section
       justify-content: center
 
       .inner
-        margin: 7em 1em 7em 1em
+        margin: 5em 1em 7em 1em
 
     .wave
       border-radius: 49%
@@ -442,7 +481,7 @@ section
     // WAVES
     .wave 
       margin-left: -3900px
-      margin-top: -8400px
+      margin-top: -8340px
 
     // INTERIOR TEXT
     .content
@@ -450,7 +489,7 @@ section
       z-index: 2
 
       .inner
-        max-width: 375px
+        max-width: 414px
         flex-grow: 1
         margin: 0
         position: relative

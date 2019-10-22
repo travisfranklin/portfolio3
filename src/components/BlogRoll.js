@@ -47,7 +47,7 @@ class BlogRoll extends React.Component {
                       </ul>
                     </div>
                   </div>
-                  <div dangerouslySetInnerHTML={{ __html: post.html }} />
+                  <div class="textWrapper" dangerouslySetInnerHTML={{ __html: post.html }} />
                 </section>
               </article>
             </div>
