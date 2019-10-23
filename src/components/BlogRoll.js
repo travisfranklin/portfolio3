@@ -20,16 +20,18 @@ class BlogRoll extends React.Component {
                 }`}
               >
                 {post.frontmatter.featuredimage ? (
-                  <div className="imgContainer">
-                    <div className="imgContainer-inner">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.title}`,
-                        }}
-                      />
+                  <a href={post.frontmatter.featuredimage.childImageSharp.original.src} className="featuredImgLink">
+                    <div className="imgContainer">
+                      <div className="imgContainer-inner">
+                        <PreviewCompatibleImage
+                          imageInfo={{
+                            image: post.frontmatter.featuredimage,
+                            alt: `featured image thumbnail for post ${post.title}`,
+                          }}
+                        />
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 ) : null}
                 <section>
                   <h3 className="bloghead">
@@ -89,6 +91,9 @@ export default () => (
                 featuredpost
                 featuredimage {
                   childImageSharp {
+                    original {
+                      src
+                    }
                     fluid(maxWidth: 1440, quality: 80) {
                       ...GatsbyImageSharpFluid
                     }
