@@ -33,7 +33,7 @@ I discovered a bit of friction. PSB serves a very broad range of clients with an
 After gathering data, I decided it would be best to draft a flow for user traversal of the site noting paths that would get the fastest throughput to conversion. In that path, I marked areas where highest drop-off rates currently existed so I could better address them in the design phase.
 ```grid|2
 ![flow graphic](/img/PSB_flow.jpg)
-![dropoffs graphic](/img/PSB_dropoffs.png)
+![dropoffs graphic](/img/PSB_dropoffs.jpg)
 ```
 
 #### The Homepage 

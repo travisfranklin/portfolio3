@@ -3,7 +3,7 @@ templateKey: blog-post
 title: 'BulkBooks.com - A modern, tech-focused dynamo gets a bright new look.'
 date: 2019-10-17T15:57:29.860Z
 featuredpost: false
-featuredimage: /img/bulkbooks_head.png
+featuredimage: /img/bulkbooks_head.jpg
 tags:
   - Photoshop
   - Illustrator
@@ -26,7 +26,7 @@ It's a workhorse, for sure, and arguably already more modern than many of it's c
 
 ### Here's the new site:
 
-![Bulkbooks' new site](/img/bulkbooks_head.png)
+![Bulkbooks' new site](/img/bulkbooks_head.jpg)
 
 We made books bold and visible above the fold, and drew attention to them with some basic parallax. Our CTA is pure and bold. Site visitors now know clearly what BulkBooks.com offers, and what to do about it. Search! On top of this, the site is also formatted to be more mobile friendly as we have seen market trends shifting towards more mobile purchases. This is all very exciting, but we haven't even scratched the surface of what we changed.
 

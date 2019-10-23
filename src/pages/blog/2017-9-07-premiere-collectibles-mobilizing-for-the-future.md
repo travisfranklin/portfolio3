@@ -18,20 +18,20 @@ I began looking at Premiere's analytics and found that their website traffic and
 
 #### The old site
 ```grid|3
-![](/img/PC_old_home.png)
-![](/img/PC_old_product.png)
-![](/img/PC_old_category.png)
+![](/img/PC_old_home.jpg)
+![](/img/PC_old_product.jpg)
+![](/img/PC_old_category.jpg)
 ```
 
 #### The new mobile friendly layout
 ```grid|3
-![](/img/PC_home.png)
-![](/img/PC_product.png)
-![](/img/PC_cart.png)
+![](/img/PC_home.jpg)
+![](/img/PC_product.jpg)
+![](/img/PC_cart.jpg)
 ```
 
 #### The Results were immediately apparent
-![](/img/PC_chart.png)
+![](/img/PC_chart.jpg)
 The added useability alongside the SEO benefit Google provides sites that are mobile friendly benefitted us greatly leading into the holiday season. The company saw a nearly **30% increase** in conversions compared to the previous year, and nearly **90% higher** add-to-cart rate.
 
 So if you haven't made your site mobile friendly, do it! Do it now!
