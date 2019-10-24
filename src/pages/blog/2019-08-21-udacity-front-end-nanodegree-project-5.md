@@ -11,7 +11,7 @@ tags:
   - Mapbox
   - Leaflet JS
   - A11y
-  - Service Workers
+  - S Workers
   - Git
 ---
 ```grid|3
