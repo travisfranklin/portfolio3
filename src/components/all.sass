@@ -62,6 +62,9 @@ body
   line-height: 1.5
   overflow-x: hidden
 
+p 
+  margin-block-start: 0
+
 
 a
   color: inherit
@@ -330,7 +333,7 @@ section
       font-size: 14px
 
 
-// Articles
+// ARTICLES
 
 .subtitle
   color: $black
@@ -375,7 +378,6 @@ p a
   margin: 3px
   text-transform: uppercase
 
-
 picture img
   position: absolute
   top: 0px
@@ -390,6 +392,26 @@ picture img
 
 picture
   min-height: 200px
+
+
+// CODE BLOCKS
+code 
+  font-size: 14px !important
+
+.token.comment, .token.block-comment, .token.prolog, .token.doctype, .token.cdata 
+  color: #516886
+
+pre[class*="language-"] 
+  background: #1B2738
+
+[class*="language-"], pre[class*="language-"] 
+  color: #A6B2C0
+  font-size: 14px
+  line-height: 1.25
+  -moz-tab-size: 2
+  -o-tab-size: 2
+  tab-size: 2
+
 
 // TAGS
 
@@ -449,6 +471,9 @@ picture
 
 @media screen and (max-width: $break-small)
 
+  h4
+    margin-top: 1rem
+
   section
     padding: 0 1em 2em
 
@@ -464,7 +489,7 @@ picture
       justify-content: center
 
       .inner
-        margin: 5em 1em 7em 1em
+        margin: 5em 1em 4em 1em
 
     .wave
       border-radius: 49%
