@@ -7,7 +7,11 @@ featuredpost: false
 featuredimage: /img/FEND-Project1.jpg
 tags:
   - HTML/CSS
+  - Git
 ---
+#### Intro
+This is the first project requested of me at the Udacity Front End Nanodegree. It focused on using layout basics to build a simple portfolio-style site. You can view the project page [here](https://travisfranklin.github.io/FEND-Project1/portfolio.html)!
+
 #### Required Elements:
 
 - at least 4 images
@@ -18,11 +22,7 @@ tags:
 - HTML5 semantic tags such as `<header>`, `<footer>`, `<article>`, `<section>` etc. are used to add meaning to the code.
 - No `<div>` or `<section>` tags are without a CSS class or id.
 
-_Check out the W3C documentation on HTML Structural Elements to learn more!_
-
 #### Custom Design:
-
-**Provide at least one of the following customizations:**
 
 - Customize images and text.
 

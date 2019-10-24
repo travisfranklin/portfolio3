@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 'PremiereCollectibles.com: Mobilizing for the Future'
+title: 'Premiere Collectibles: Mobilizing for the Future'
 date: 2017-09-07T15:57:29.860Z
 featuredpost: false
 featuredimage: /img/PC_header.jpg
@@ -18,20 +18,21 @@ I began looking at Premiere's analytics and found that their website traffic and
 
 #### The old site
 ```grid|3
-![](/img/PC_old_home.jpg)
-![](/img/PC_old_product.jpg)
-![](/img/PC_old_category.jpg)
+![picture of the nasty old home page](/img/PC_old_home.jpg)
+![picture of the nasty old product page](/img/PC_old_product.jpg)
+![picture of the nasty old category page (I don't have a shot of the shopping cart available, but it was awful too, I promise)](/img/PC_old_category.jpg)
 ```
 
 #### The new mobile friendly layout
 ```grid|3
-![](/img/PC_home.jpg)
-![](/img/PC_product.jpg)
-![](/img/PC_cart.jpg)
+![picture of the new mobile friendly home page](/img/PC_home.jpg)
+![picture of the new mobile friendly product page](/img/PC_product.jpg)
+![picture of the new mobile friendly shopping cart page](/img/PC_cart.jpg)
 ```
+[View it live here](http://www.premierecollectibles.com)
 
 #### The Results were immediately apparent
-![](/img/PC_chart.jpg)
+![Chart showing site conversions from June through December of 2017. The chart spikes at the point marked by the updated site's launch and continues a much improved trend through the end of the year.](/img/PC_chart.jpg)
 The added useability alongside the SEO benefit Google provides sites that are mobile friendly benefitted us greatly leading into the holiday season. The company saw a nearly **30% increase** in conversions compared to the previous year, and nearly **90% higher** add-to-cart rate.
 
 So if you haven't made your site mobile friendly, do it! Do it now!

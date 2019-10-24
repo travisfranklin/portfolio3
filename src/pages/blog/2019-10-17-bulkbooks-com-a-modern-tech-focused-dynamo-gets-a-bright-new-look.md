@@ -12,6 +12,7 @@ tags:
   - Javascript
   - Rails
   - Marketing
+  - Git
 ---
 #### When I set out to re-design BulkBooks.com I was given three objectives:  
 1. Give us the ability to directly target certain market segments.  
@@ -51,4 +52,4 @@ Now when BulkBooks targets a market, they don't just send users to their front p
 
 We were tasked with providing a means for BulkBooks.com to rapidly adapt to market trends. This was solved through a battery of pages for articles, lists, and special categories, all designed for crystal clear readability, and SEO.
 
-I'm happy to say that BulkBooks.com has really exploded out of the gate with it's new website design focused on user relevance, throughput, and SEO.
+I'm happy to say that BulkBooks.com has really exploded out of the gate with it's new website design focused on user relevance, throughput, and SEO. You can view the new site (along with the fancy dancy parallax animations) [here](http://www.bulkbooks.com)!
