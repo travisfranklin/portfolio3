@@ -42,7 +42,7 @@ class BlogRoll extends React.Component {
                       <ul className="tagList">
                           <li className="tagHeader">Tech used:</li>
                         {post.frontmatter.tags.map(tag => (
-                          <li className="tag">
+                          <li className="taggg">
                             {tag}
                           </li>
                         ))}

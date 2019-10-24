@@ -12,12 +12,9 @@ tags:
 ---
 
 #### Intro
-This project focused on using HTML/CSS for styling and vanilla Javascript including classes and IIFEs for controlling interaction of sprites within the canvas api. You can access the game [here](https://travisfranklin.github.io/FEND-Project3/).
-
-#### Intro
 This project tested my ability to use [Jasmine](http://jasmine.github.io/) testing suite to validate a simple RSS feed app.
 
-Although I would advise viewers to [run this locally](#using-locally) for testing, [here is a link to the GitHub pages site for this repo](https://travisfranklin.github.io/FEND-Project4/).
+Although I would advise viewers to run this locally for testing, [here](https://travisfranklin.github.io/FEND-Project4/) is a link to the GitHub pages site for this repo.
 
 I have included a script in the html that scrolls the viewer to the bottom of the page for easy viewing of the testing area. If you would prefer the page to not behave this way, simply remove this script from the html file:
 ```html
