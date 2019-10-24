@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 'PremiereSpeakers.com - Celebrating 25 years with a beautiful new site.'
+title: 'Premiere Speakers Bureau - Celebrating 25 years with a beautiful new site.'
 date: 2019-03-15T15:57:29.860Z
 featuredpost: false
 featuredimage: /img/PSB_flow.jpg
