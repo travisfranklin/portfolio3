@@ -11,6 +11,11 @@ export const IndexPageTemplate = ({
   mainpitch,
 }) => (
   <div>
+    <div className="waveContainer">
+      <div className='wave'></div>
+      <div className='wave'></div>
+      <div className='wave'></div>
+    </div>
     <section className="header" id="header">
       <div className="content">
         <div className="inner">
@@ -22,13 +27,7 @@ export const IndexPageTemplate = ({
           </h2>
           <p className="blurb">{mainpitch.description}</p>
         </div>
-      </div>
-
-      <div className='wave'></div>
-      <div className='wave'></div>
-      <div className='wave'></div>
-      
-      
+      </div>    
     </section>
 
     <section className="">
