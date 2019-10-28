@@ -157,15 +157,21 @@ section
     background-color: $blacker
 
 // WAVES
-.wavesWrapper
+.wavesWrapperOuter
   position: relative
 
+.wavesWrapperInner
+  position: absolute
+  overflow: hidden
+  width: 100vw
+  height: 800px
 
 .waves
   position: absolute
   width: 120vw
   height: 800px
   transition: all .5s ease-in-out;
+  overflow: hidden
 
 .flipped
   transform: rotate(180deg)

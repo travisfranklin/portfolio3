@@ -11,12 +11,14 @@ export const IndexPageTemplate = ({
   mainpitch,
 }) => (
   <div>
-    <div className="wavesWrapper">
-      <svg className="waves" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <path fill="#1A1A25" fill-opacity=".6" d="M100 63.2a17 17 0 00-12.2 4.2A17 17 0 0169.5 70l-1.3-.6A17.5 17.5 0 0049.6 72 17.5 17.5 0 0131 74.6l-.6-.2a19 19 0 00-19.8 2.4l-.4.4C7.2 79.6 3.6 80.8 0 81V0h100v63.2z"/>
-        <path fill="#1A1A25" fill-opacity=".6" d="M100 65c-5.5-.7-11.2 1-15.5 4.7-5.8 5-14 6.3-21.1 3l-1.4-.6c-7.1-3.2-15.5-2-21.5 3-6 5.1-14.3 6.3-21.5 3l-.7-.3a22 22 0 00-18.3 0V0h100v65z"/>
-        <path fill="#1A1A25" fill-opacity=".6" d="M100 64.6l-.4-.2a35 35 0 00-37.2 5.2l-4 3.3a35 35 0 01-37 5.2l-7.9-3.5c-4.3-2-9-3-13.5-3.2V0h100v64.6z"/>
-      </svg>
+    <div className="wavesWrapperOuter">
+      <div className="wavesWrapperInner">
+        <svg className="waves" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <path fill="#1A1A25" fill-opacity=".6" d="M100 63.2a17 17 0 00-12.2 4.2A17 17 0 0169.5 70l-1.3-.6A17.5 17.5 0 0049.6 72 17.5 17.5 0 0131 74.6l-.6-.2a19 19 0 00-19.8 2.4l-.4.4C7.2 79.6 3.6 80.8 0 81V0h100v63.2z"/>
+          <path fill="#1A1A25" fill-opacity=".6" d="M100 65c-5.5-.7-11.2 1-15.5 4.7-5.8 5-14 6.3-21.1 3l-1.4-.6c-7.1-3.2-15.5-2-21.5 3-6 5.1-14.3 6.3-21.5 3l-.7-.3a22 22 0 00-18.3 0V0h100v65z"/>
+          <path fill="#1A1A25" fill-opacity=".6" d="M100 64.6l-.4-.2a35 35 0 00-37.2 5.2l-4 3.3a35 35 0 01-37 5.2l-7.9-3.5c-4.3-2-9-3-13.5-3.2V0h100v64.6z"/>
+        </svg>
+      </div>
     </div>
     <section className="header" id="header">
       <div className="content">
@@ -43,16 +45,18 @@ export const IndexPageTemplate = ({
       </div>
     </section>
     <section className="fullwidth footer">
+      <div className="wavesWrapperInner">
+        <svg className="waves flipped" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <path fill="#1A1A25" fill-opacity=".6" d="M100 63.2a17 17 0 00-12.2 4.2A17 17 0 0169.5 70l-1.3-.6A17.5 17.5 0 0049.6 72 17.5 17.5 0 0131 74.6l-.6-.2a19 19 0 00-19.8 2.4l-.4.4C7.2 79.6 3.6 80.8 0 81V0h100v63.2z"/>
+          <path fill="#1A1A25" fill-opacity=".6" d="M100 65c-5.5-.7-11.2 1-15.5 4.7-5.8 5-14 6.3-21.1 3l-1.4-.6c-7.1-3.2-15.5-2-21.5 3-6 5.1-14.3 6.3-21.5 3l-.7-.3a22 22 0 00-18.3 0V0h100v65z"/>
+          <path fill="#1A1A25" fill-opacity=".6" d="M100 64.6l-.4-.2a35 35 0 00-37.2 5.2l-4 3.3a35 35 0 01-37 5.2l-7.9-3.5c-4.3-2-9-3-13.5-3.2V0h100v64.6z"/>
+        </svg>
+      </div>
       <div className="content">
         <div className="inner">
           <p>copyright &copy; Travis Franklin {date}.</p>
         </div>
       </div>
-      <svg className="waves flipped" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <path fill="#1A1A25" fill-opacity=".6" d="M100 63.2a17 17 0 00-12.2 4.2A17 17 0 0169.5 70l-1.3-.6A17.5 17.5 0 0049.6 72 17.5 17.5 0 0131 74.6l-.6-.2a19 19 0 00-19.8 2.4l-.4.4C7.2 79.6 3.6 80.8 0 81V0h100v63.2z"/>
-        <path fill="#1A1A25" fill-opacity=".6" d="M100 65c-5.5-.7-11.2 1-15.5 4.7-5.8 5-14 6.3-21.1 3l-1.4-.6c-7.1-3.2-15.5-2-21.5 3-6 5.1-14.3 6.3-21.5 3l-.7-.3a22 22 0 00-18.3 0V0h100v65z"/>
-        <path fill="#1A1A25" fill-opacity=".6" d="M100 64.6l-.4-.2a35 35 0 00-37.2 5.2l-4 3.3a35 35 0 01-37 5.2l-7.9-3.5c-4.3-2-9-3-13.5-3.2V0h100v64.6z"/>
-      </svg>
     </section>
   </div>
 )
