@@ -132,7 +132,7 @@ section
   color: rgba(0, 0, 0, 0.7)
 
 .fullwidth
-  padding: 0rem !important
+  padding: 0
   max-width: 100%
 
 .container
@@ -156,48 +156,23 @@ section
     min-height: 200px
     background-color: $blacker
 
-
 // WAVES
+.wavesWrapper
+  position: relative
 
-.waveContainer
+
+.waves
   position: absolute
-  top: 0
-  overflow: hidden
-  width: 100vw
-  height: 612px
+  width: 120vw
+  height: 800px
+  transition: all .5s ease-in-out;
 
-.wave 
-  position: absolute
-  height: 8790px
-  width: 8790px
-  opacity: .6
-  left: 0
-  top: 0
-  margin-left: -4200px
-  margin-top: -8240px
-  background: #1a1a25
-  border-radius: 48.9%
-  -webkit-animation: wave 45s infinite linear
-  animation: wave 45s infinite linear
+.flipped
+  transform: rotate(180deg)
+  top: -150px;
 
-.wave:nth-child(2)
-  top: 30px
-  animation-duration: 20s
-  opacity: 0.6
-  background: $blacker
-  border-radius: 49.2%
+  
 
-.wave:nth-child(3) 
-  animation-duration: 15s
-  opacity: 0.6
-  background: $blacker
-  top: 20px
-
-@keyframes wave 
-  0%
-    transform: rotate(0deg)
-  100%
-    transform: rotate(360deg)
 
 // HEADER
 
@@ -210,9 +185,8 @@ section
   background-size: cover
   background-attachment: fixed
   color: $primary-invert
-
-  
-
+  height: 500px
+  padding-top: 7rem;
 
   // INTERIOR TEXT
   .content
@@ -222,7 +196,6 @@ section
     .inner
       max-width: 414px
       flex-grow: 1
-      margin: 5em 0
       position: relative
       width: auto
     
@@ -271,47 +244,6 @@ section
   color: $primary-invert
   height: 200px
   overflow: hidden
-
-  // WAVES
-  @keyframes wave 
-    0%
-      transform: rotate(0deg)
-    100%
-      transform: rotate(360deg)
-
-  .wave 
-    position: absolute
-    height: 8790px
-    width: 8790px
-    opacity: 1
-    left: 0
-    top: unset
-    margin-top: unset
-    bottom: -8690px
-    margin-left: -4200px
-    background: #1a1a25
-    border-radius: 48%
-    -webkit-animation: wave 45s infinite linear
-    animation: wave 45s infinite linear
-    z-index: 0
-
-  .wave:nth-child(2),
-  .wave:nth-child(3) 
-    bottom: -8670px
-
-  .wave:nth-child(2)
-    animation-duration: 20s
-    opacity: 0.6
-    background: $blacker
-    border-radius: 47.9%
-    bottom: -8670px
-
-  .wave:nth-child(3) 
-    animation-duration: 15s
-    opacity: 0.6
-    background: $blacker
-    border-radius: 48%
-    bottom: -8680px
     
   .content
     margin: 0 auto
@@ -323,7 +255,7 @@ section
     .inner
       max-width: 414px
       flex-grow: 1
-      margin: 7em 0
+      margin: 10em 0
       position: relative
       width: auto
       font-weight: 900
@@ -487,19 +419,27 @@ pre[class*="language-"]
   .areahead
     text-align: center
 
+  // WAVES
+  .waves
+    height: 700px
+    width: 200vw
+
   // HEADER
 
   .header
+    height: 450px
+    padding-top: 5rem
+
     
     .content
       display: flex
       justify-content: center
 
       .inner
-        margin: 5em 1em 4em 1em
+        margin: 0 1em 4em 1em
 
-    .wave
-      border-radius: 49%
+      .hello
+        font-size: 4em
 
 
   .title
@@ -546,13 +486,7 @@ pre[class*="language-"]
   // HEADER
 
   .header
-    margin-top: 7em 
-    height: 480px
-
-    // WAVES
-    .wave 
-      margin-left: -3900px
-      margin-top: -8340px
+    padding-top: 7rem 
 
     // INTERIOR TEXT
     .content
@@ -617,13 +551,3 @@ pre[class*="language-"]
     color: $primary-invert
     height: 200px
     overflow: hidden
-
-    // WAVES
-    @keyframes wave 
-      0%
-        transform: rotate(0deg)
-      100%
-        transform: rotate(360deg)
-
-    .wave 
-      margin-left: -3600px
