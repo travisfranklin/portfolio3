@@ -5,6 +5,14 @@ module.exports = {
       "I'm a freelance front-end UI developer and art director specializing in responsive web experiences, modern CSS, and thoughtful, accessible design.",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-141778070-1",
+        head: false,
+        respectDNT: true,
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
