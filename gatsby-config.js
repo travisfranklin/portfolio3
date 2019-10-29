@@ -3,6 +3,9 @@ module.exports = {
     title: "Travis' bananas site",
     description:
       "I'm a freelance front-end UI developer and art director specializing in responsive web experiences, modern CSS, and thoughtful, accessible design.",
+    url: "https://www.TravisLF.com", // No trailing slash allowed!
+    image: "${__dirname}/static/img/ogimage.jpg", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@RRRed__"
   },
   plugins: [
     {
