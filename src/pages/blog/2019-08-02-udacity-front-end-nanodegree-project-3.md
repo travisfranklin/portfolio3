@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 'Udacity Front End Nanodegree [Project 3]'
+title: 'Frogger Clone with Canvas'
 date: 2019-08-02T20:52:00.000Z
 description: ' '
 featuredpost: false
@@ -13,11 +13,11 @@ tags:
   - Git
 ---
 
-#### Intro
+#### Udacity FEND Project 3
 This project focused on using HTML/CSS for styling and vanilla Javascript including classes and IIFEs for controlling interaction of sprites within the canvas api. You can access the game [here](https://travisfranklin.github.io/FEND-Project3/).
 
 #### How to play
-- Undertake a journey to the top of the gameboard.  
+- Undertake a journey to the top of the game board.  
 - You can navigate using your arrow keys. 
 - Beware, you must pass many scary creatures on your way. Take heed not to touch them, or your precious vitality will be diminished. 
 - Touch one of these foul creatures three times and you surely shall perish.
@@ -25,7 +25,7 @@ This project focused on using HTML/CSS for styling and vanilla Javascript includ
 - As your score increases, the creatures will become more difficult to evade.  
 - As any wanderer knows, every journey has an end. Yours will end when your vitality reaches zero. The higher your score, the more journeys you experienced. That is your final goal.  
 
-This may sound bleak, but take heart--see how far your travels will take you before your reach the road's end.
+This may sound bleak, but take heart—see how far your travels will take you before your reach the road's end.
 
 #### Sources:
 All imagery used has been edited from their original design to better fit the medium.

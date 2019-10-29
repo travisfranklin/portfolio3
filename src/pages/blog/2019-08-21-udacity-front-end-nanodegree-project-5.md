@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 'Udacity Front End Nanodegree [Project 5]'
+title: 'Gourm.et Restaurant Reviews'
 date: 2019-10-01T20:52:00.000Z
 description: ' '
 featuredpost: false
@@ -14,13 +14,10 @@ tags:
   - S Workers
   - Git
 ---
-```grid|3
-![gourmet logo](/img/gourmet_logo.svg)
-```
 The Consummate Culinary Collection for Caloric Connoisseurs
 
-#### Intro
-This project tests everything I have learned in the 3 months of my studies in the front-end-nanodegree program. Here's a breakdown of the features!
+#### Udacity FEND Project 5
+This project tests everything I have learned in the 3 months of my studies in the front-end-nanodegree program. You can view the site [here!](https://travisfranklin.github.io/FEND-Project5/) Here's a breakdown of the features:
 
 #### ES6 Syntax
 This web app utilizes modern ES6 syntax for it's Javascript.

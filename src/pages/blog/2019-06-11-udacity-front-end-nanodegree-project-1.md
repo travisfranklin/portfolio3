@@ -1,16 +1,16 @@
 ---
 templateKey: blog-post
-title: 'Udacity Front End Nanodegree [Project 1]'
+title: 'Single-page Personal Site'
 date: 2019-06-11T13:52:21.187Z
-description: '  '
+description: ''
 featuredpost: false
 featuredimage: /img/FEND-Project1.jpg
 tags:
   - HTML/CSS
   - Git
 ---
-#### Intro
-This is the first project requested of me at the Udacity Front End Nanodegree. It focused on using layout basics to build a simple portfolio-style site. You can view the project page [here](https://travisfranklin.github.io/FEND-Project1/portfolio.html)!
+#### Udacity FEND Project 1
+This is the first project requested of me at the Udacity Front End Nanodegree. It focused on using layout basics to build a simple portfolio-style site. The site you're currently on has replaced this project's site, but you can still view the project via Github pages [here!](https://travisfranklin.github.io/FEND-Project1/portfolio.html)
 
 #### Required Elements:
 

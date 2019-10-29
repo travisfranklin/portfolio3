@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 'BulkBooks.com - A modern, tech-focused dynamo gets a bright new look.'
+title: 'Bulk Books: A modern, tech-focused dynamo gets a bright new look.'
 date: 2019-10-17T15:57:29.860Z
 featuredpost: false
 featuredimage: /img/bulkbooks_head.jpg
@@ -14,6 +14,7 @@ tags:
   - Marketing
   - Git
 ---
+
 #### When I set out to re-design BulkBooks.com I was given three objectives:  
 1. Give us the ability to directly target certain market segments.  
 2. Create a means for BulkBooks.com to adapt quickly to new market opportunities and trends.  

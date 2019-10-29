@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 'Udacity Front End Nanodegree [Project 2]'
+title: 'Javascript Memory Game'
 date: 2019-07-12T20:52:00.000Z
 description: '   '
 featuredpost: false
@@ -12,7 +12,7 @@ tags:
   - Photoshop
   - Git
 ---
-#### Intro
+#### Udacity FEND Project 2
 This project focused on creating a game to spec using vanilla Javascript. You can view the project [here](https://travisfranklin.github.io/FEND-Project2/)!  
 
 #### Instructions

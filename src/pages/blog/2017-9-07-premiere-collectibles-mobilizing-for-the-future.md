@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 'Premiere Collectibles: Mobilizing for the Future'
+title: 'Premiere Collectibles: Mobilizing for the Future.'
 date: 2017-09-07T15:57:29.860Z
 featuredpost: false
 featuredimage: /img/PC_header.jpg

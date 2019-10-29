@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 'Premiere Speakers Bureau - Celebrating 25 years with a beautiful new site.'
+title: 'Premiere Speakers Bureau: Celebrating 25 years with a beautiful new site.'
 date: 2019-03-15T15:57:29.860Z
 featuredpost: false
 featuredimage: /img/PSB_flow.jpg
@@ -10,13 +10,13 @@ tags:
   - XD
   - Analytics
 ---
-#### Redesigning PSB's ebsite was no easy task.
+#### Redesigning PSB's website was no easy task.
 The site is used daily and repeatedly by power users and booking agents scouting talent for corporate and organizational events. Every change needs to be thought through from that perspective. I can't completely upset those user's flow by moving many elements around. Instead I focused on a few major points:
 1. Mobile useability. (their previous site was barely functional on mobile devices)
 2. Search engine optimization (recently keyword competition has intensified in the field of speakers bureaus, and I needed to implement some careful planning to ensure the site remained competitive in a way that's scalable)
 3. Optimized user throughput to conversions (after all, that is the point of this website, right?)
 
-#### Here's the highest traffic pages from the old site:
+#### Here are the highest traffic pages from the old site:
 ```grid|4
 ![PSB's Old site, homepage](/img/PSB_old_home.jpg)
 ![PSB's Old site, speaker profile](/img/PSB_old_speaker.jpg)

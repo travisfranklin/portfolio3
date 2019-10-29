@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 'Udacity Front End Nanodegree [Project 4]'
+title: 'Testing With Jasmine'
 date: 2019-08-21T20:52:00.000Z
 description: ' '
 featuredpost: false
@@ -11,7 +11,7 @@ tags:
   - Git
 ---
 
-#### Intro
+#### Udacity FEND Project 4
 This project tested my ability to use [Jasmine](http://jasmine.github.io/) testing suite to validate a simple RSS feed app.
 
 Although I would advise viewers to run this locally for testing, [here](https://travisfranklin.github.io/FEND-Project4/) is a link to the GitHub pages site for this repo.
