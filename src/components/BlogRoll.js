@@ -20,7 +20,7 @@ class BlogRoll extends React.Component {
                 }`}
               >
                 {post.frontmatter.featuredimage ? (
-                  <a href={post.frontmatter.featuredimage.childImageSharp.original.src} className="featuredImgLink">
+                  <a target="_blank" href={post.frontmatter.featuredimage.childImageSharp.original.src} className="featuredImgLink">
                     <div className="imgContainer">
                       <div className="imgContainer-inner">
                         <PreviewCompatibleImage
