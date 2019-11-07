@@ -9,6 +9,7 @@ export const IndexPageTemplate = ({
   title,
   subheading,
   mainpitch,
+  cta,
 }) => (
   <div>
     <div className="wavesWrapperOuter">
@@ -28,19 +29,28 @@ export const IndexPageTemplate = ({
           </h1>
           <h2 className="title">
             {subheading}
-          </h2>
-          <p className="blurb">{mainpitch.description}</p>
+          </h2>          
         </div>
-      </div>    
+      </div>
+      <aside className="cta">
+        <div className="ctaText">
+          <h3>{mainpitch.description}</h3>
+          <h3>
+            {cta} <a href="mailto:hello@travislf.com"><strong>Reach out!</strong></a>
+          </h3>
+        </div>
+      </aside>
     </section>
 
-    <section className="">
+
+
+    <section>
         <h3 className="title areahead">What have I been working on?</h3>
     </section>
     <section className="fullwidth">
-      <div className="">
-        <div className="">
-          <BlogRoll />
+      <div>
+        <div>
+          <BlogRoll/>
         </div>
       </div>
     </section>
@@ -76,6 +86,7 @@ const IndexPage = ({ data }) => {
         title={frontmatter.title}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
+        cta={frontmatter.cta}
       />
     </Layout>
   )
@@ -99,7 +110,8 @@ export const pageQuery = graphql`
         subheading
         mainpitch {
           description
-        }        
+        }
+        cta      
       }
     }
   }

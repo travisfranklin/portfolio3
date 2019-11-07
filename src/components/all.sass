@@ -169,13 +169,13 @@ section
 .waves
   position: absolute
   width: 120vw
-  height: 800px
-  transition: all 3s ease-in-out;
+  height: 830px
+  transition: all 3s ease-in-out
   overflow: hidden
 
 .flipped
   transform: rotate(180deg)
-  top: -150px;
+  top: -150px
 
   
 
@@ -186,13 +186,13 @@ section
   align-items: stretch
   display: flex
   position: relative
-  flex-direction: column
-  justify-content: space-between
-  background-size: cover
-  background-attachment: fixed
-  color: $primary-invert
-  height: 500px
-  padding-top: 7rem;
+  flex-direction: row
+  flex-wrap: wrap
+  align-content: flex-start
+  align-items: flex-start
+  color: #eeeefa
+  height: 550px
+  padding-top: 7rem
 
   // INTERIOR TEXT
   .content
@@ -232,14 +232,43 @@ section
   .blurb
     line-height: 1.25
     color: $primary-invert
-    margin-bottom: 3rem
+    margin-bottom: 0rem
+
 
   .title
     font-size: 1.5rem
     font-weight: 600
     line-height: 1.25
-    margin-bottom: .5rem
+    margin-bottom: 1.5rem
 
+// CTA
+
+.cta 
+  background-color: transparent
+  padding: 0
+  margin-right: 0
+  border-radius: 0
+
+.ctaText
+  margin: 0
+  max-width: 414px
+
+  h3:not(:last-child)
+    font-size: 100%
+    font-weight: 600
+    line-height: 1.4rem
+    font-weight: 400
+    margin-bottom: .75rem
+
+
+  a 
+    color: $pop
+    transition: all 200ms ease
+    font-weight: 500
+    text-decoration: none
+  
+  a:hover
+    text-decoration: underline
 
 // FOOTER
 
@@ -421,26 +450,42 @@ pre[class*="language-"]
 
   // WAVES
   .waves
-    height: 700px
+    height: 800px
     width: 200vw
 
   // HEADER
 
   .header
-    height: 450px
+    height: 580px
     padding-top: 5rem
+    justify-content: flex-start
+    align-content: flex-start
+    align-items: flex-start
 
-    
+
     .content
       display: flex
       justify-content: center
 
       .inner
-        margin: 0 1em 4em 1em
+        margin: 0 1em 1em 1em
 
       .hello
         font-size: 4em
 
+  // CTA
+
+  .cta 
+    background-color: transparent
+    padding: 0
+    margin-right: 0
+    border-radius: 0
+
+  .ctaText
+    margin: 0 1em 1em
+
+    h3
+      margin: 0
 
   .title
     font-size: 1.25rem !important
@@ -487,6 +532,7 @@ pre[class*="language-"]
 
   .header
     padding-top: 7rem 
+    justify-content: space-between
 
     // INTERIOR TEXT
     .content
@@ -527,7 +573,7 @@ pre[class*="language-"]
     .blurb
       line-height: 1.25
       color: $primary-invert
-      margin-bottom: 3rem
+      margin-bottom: 2rem
 
     .title
       color: $primary-invert
@@ -543,6 +589,26 @@ pre[class*="language-"]
 
     .imgContainer
       width: 100%
+
+  // CTA
+
+  .cta 
+    position: relative
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: center
+    align-items: center
+    align-content: center
+    background-color: rgba(0, 0, 0, 0.125)
+    padding: 40px
+    margin-right: -7rem
+    border-radius: 10px
+    max-width: 300px
+
+  .ctaText
+    z-index: 2
+    color: $primary-invert
 
   // FOOTER
   .footer
