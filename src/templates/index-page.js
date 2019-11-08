@@ -36,7 +36,7 @@ export const IndexPageTemplate = ({
         <div className="ctaText">
           <h3>{mainpitch.description}</h3>
           <h3>
-            {cta} <a href="mailto:hello@travislf.com"><strong>Reach out!</strong></a>
+            {cta} <a href="mailto:hello@travislf.com"><strong>hello@travislf.com</strong></a>.
           </h3>
         </div>
       </aside>

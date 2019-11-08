@@ -5,5 +5,5 @@ subheading: I eat, sleep, and breathe stories. I turn data into empathy, and emp
 mainpitch:
   description: > 
     I am a Front End Developer and UI Designer offering over 16 years of experience designing for brands.
-cta: I'm currently seeking full-time work.
+cta: I'm currently seeking full-time work. You can reach me at 
 ---
