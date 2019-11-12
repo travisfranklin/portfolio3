@@ -50,7 +50,7 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <div className="linkContainer">
         <ul className="linkList">
-          <li className="linkItem"><a className="link" href="mailto:travislf88@gmail.com">Email</a></li>
+          <li className="linkItem"><a className="link" href="mailto:hello@travislf.com">Email</a></li>
           <li className="linkItem"><a className="link" href="https://www.linkedin.com/in/travisfranklin/">LinkedIn</a></li>
           <li className="linkItem"><a className="link" href="https://github.com/travisfranklin/">GitHub</a></li>
         </ul>
