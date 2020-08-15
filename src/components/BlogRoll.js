@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 
@@ -13,14 +13,15 @@ class BlogRoll extends React.Component {
       <div className="blogroll">
         {posts &&
           posts.map(({ node: post }) => (
-            <div  key={post.id}>
+            <div key={post.id}>
               <article
                 className={`article${
                   post.frontmatter.featuredpost ? ' is-featured' : ''
                 }`}
               >
+
                 {post.frontmatter.featuredimage ? (
-                  <a target="_blank" href={post.frontmatter.featuredimage.childImageSharp.original.src} className="featuredImgLink">
+                  <a target="_blank" rel="noreferrer" href={post.frontmatter.featuredimage.publicURL} className="featuredImgLink">
                     <div className="imgContainer">
                       <div className="imgContainer-inner">
                         <PreviewCompatibleImage
@@ -42,14 +43,14 @@ class BlogRoll extends React.Component {
                       <ul className="tagList">
                           <li className="tagHeader">Tech used:</li>
                         {post.frontmatter.tags.map(tag => (
-                          <li className="taggg">
+                          <li key={tag} className="taggg">
                             {tag}
                           </li>
                         ))}
                       </ul>
                     </div>
                   </div>
-                  <div class="textWrapper" dangerouslySetInnerHTML={{ __html: post.html }} />
+                  <div className="textWrapper" dangerouslySetInnerHTML={{ __html: post.html }} />
                 </section>
               </article>
             </div>
@@ -91,13 +92,11 @@ export default () => (
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    original {
-                      src
-                    }
-                    fluid(maxWidth: 1440, quality: 80) {
+                    fluid(maxWidth: 1440, quality: 72) {
                       ...GatsbyImageSharpFluid
                     }
                   }
+                  publicURL
                 }
               }
             }
