@@ -151,10 +151,14 @@ section
   margin-bottom: 2rem
 
   .imgContainer-inner
+    display: flex
     flex: 1 1 100%
-    height: 30vw
-    min-height: 200px
     background-color: $blacker
+
+    img
+      object-fit: contain
+      width: 100%
+      flex-grow: 1
 
 // WAVES
 .wavesWrapperOuter
@@ -176,8 +180,6 @@ section
 .flipped
   transform: rotate(180deg)
   top: -150px
-
-  
 
 
 // HEADER
@@ -452,14 +454,14 @@ pre[class*="language-"]
 
   // WAVES
   .waves
-    height: 800px
+    height: 890px
     width: 200vw
 
   // HEADER
-
   .header
     height: 580px
     padding-top: 5rem
+    padding-bottom: 6rem
     justify-content: flex-start
     align-content: flex-start
     align-items: flex-start
@@ -524,6 +526,9 @@ pre[class*="language-"]
   .bloghead
     font-size: 1.75em
     margin-bottom: 1.5rem
+
+  .imgContainer-inner img
+    width: unset
 
 @media screen and (min-width: $break-large)
 

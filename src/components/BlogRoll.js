@@ -91,11 +91,6 @@ export default () => (
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
                 featuredimage {
-                  childImageSharp {
-                    fluid(maxWidth: 1440, quality: 72) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
                   publicURL
                 }
               }

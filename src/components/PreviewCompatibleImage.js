@@ -6,15 +6,15 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
   const { alt = '', childImageSharp, image } = imageInfo
   const styles = { width : '100%' }
 
-  if (!!image && !!image.childImageSharp) {
-    return (
-      <Img fluid={image.childImageSharp.fluid} alt={alt} />
-    )
-  }
+  // if (!!image && !!image.childImageSharp) {
+  //   return (
+  //     <Img fluid={image.childImageSharp.fluid} alt={alt} />
+  //   )
+  // }
 
-  if (!!childImageSharp) {
-    return <Img fluid={childImageSharp.fluid} alt={alt} />
-  }
+  // if (!!childImageSharp) {
+  //   return <Img fluid={childImageSharp.fluid} alt={alt} />
+  // }
 
   if (!!image && typeof image === 'string') {
     return <img src={image} alt={alt} style={styles} />
