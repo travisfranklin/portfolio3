@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Travis' bananas site",
+    title: "TravisLF.com",
     description:
       "I'm a freelance front-end UI developer and art director specializing in responsive web experiences, modern CSS, and thoughtful, accessible design.",
     url: "https://www.TravisLF.com", // No trailing slash allowed!
