@@ -319,6 +319,33 @@ section
   stroke: 2px solid outside
   margin-bottom: 2rem
 
+  .copyNotif
+    opacity: 0
+    background: #e2e2e2
+    border-radius: 4px
+    color: rgba(0, 0, 0, 0.7)
+    display: inline-block
+    font-size: 10px
+    font-weight: 600
+    letter-spacing: 1px
+    padding: 7px
+    position: relative
+    text-align: center
+    text-transform: uppercase
+    vertical-align: top
+    line-height: 12px
+    width: 110px
+    margin: 10px 10px 10px 30px
+    transition: all .1s ease-in-out
+
+.bloghead:hover
+  color: #000
+  cursor: pointer
+
+  .copyNotif
+    opacity: 1
+    margin: 10px
+
 .areahead
   font-size: 2rem
 
@@ -526,6 +553,13 @@ pre[class*="language-"]
   .bloghead
     font-size: 1.75em
     margin-bottom: 1.5rem
+
+    .copyNotif
+      display: none
+
+  .bloghead:hover
+    color: #000
+    cursor: pointer
 
   .imgContainer-inner img
     width: unset

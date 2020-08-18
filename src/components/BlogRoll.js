@@ -5,6 +5,25 @@ import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 
 class BlogRoll extends React.Component {
+
+  // constructor() {
+  //   this.copyToClipboard = this.copyToClipboard.bind(this);
+  // }
+
+  copyToClipboard(str) {
+    const str_ = str.replace(/([\/\,\:\!\\\^\$\{\}\[\]\(\)\.\*\+\?\|\<\>\-\&\s])/g,"-")
+    console.log(str_)
+    const el = document.createElement('textarea');
+    el.value = `https://www.TravisLF.com/#${str_}`;
+    el.setAttribute('readonly', '');
+    el.style.position = 'absolute';
+    el.style.left = '-9999px';
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+  }
+
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
@@ -18,6 +37,7 @@ class BlogRoll extends React.Component {
                 className={`article${
                   post.frontmatter.featuredpost ? ' is-featured' : ''
                 }`}
+                id={`${post.frontmatter.title.replace(/([\/\,\:\!\\\^\$\{\}\[\]\(\)\.\*\+\?\|\<\>\-\&\s])/g,"-")}`}
               >
 
                 {post.frontmatter.featuredimage ? (
@@ -35,9 +55,16 @@ class BlogRoll extends React.Component {
                   </a>
                 ) : null}
                 <section>
-                  <h3 className="bloghead">
-                    {post.frontmatter.title}
-                  </h3>
+                    <h3 className="bloghead">
+                      <a
+                        href={`#${post.frontmatter.title.replace(/([\/\,\:\!\\\^\$\{\}\[\]\(\)\.\*\+\?\|\<\>\-\&\s])/g,"-")}`}
+                        onClick={() => { this.copyToClipboard(post.frontmatter.title) }}
+                        title={post.frontmatter.title} className="headerlink"
+                      >
+                        {post.frontmatter.title}
+                      </a>
+                      <span className="copyNotif">click to copy article link</span>
+                    </h3>
                   <div className="tagOuterContainer">
                     <div className="tagInnerContainer">
                       <ul className="tagList">

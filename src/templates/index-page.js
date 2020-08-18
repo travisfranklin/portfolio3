@@ -111,7 +111,7 @@ export const pageQuery = graphql`
         mainpitch {
           description
         }
-        cta      
+        cta
       }
     }
   }

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
@@ -9,7 +9,6 @@ export const BlogPostTemplate = ({
   content,
   contentComponent,
   description,
-  tags,
   title,
   helmet,
 }) => {
