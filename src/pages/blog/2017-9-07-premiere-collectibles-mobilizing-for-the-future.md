@@ -23,16 +23,18 @@ I began looking at Premiere's analytics and found that their website traffic and
 ![picture of the nasty old category page (I don't have a shot of the shopping cart available, but it was awful too, I promise)](/img/PC_old_category.jpg)
 ```
 
-#### The new mobile friendly layout
+#### The new mobile-friendly layout
 ```grid|3
-![picture of the new mobile friendly home page](/img/PC_home.jpg)
-![picture of the new mobile friendly product page](/img/PC_product.jpg)
-![picture of the new mobile friendly shopping cart page](/img/PC_cart.jpg)
+![picture of the new mobile-friendly home page](/img/PC_home.jpg)
+![picture of the new mobile-friendly product page](/img/PC_product.jpg)
+![picture of the new mobile-friendly shopping cart page](/img/PC_cart.jpg)
 ```
 [View it live here](http://www.premierecollectibles.com)
 
 #### The Results were immediately apparent
-![Chart showing site conversions from June through December of 2017. The chart spikes at the point marked by the updated site's launch and continues a much improved trend through the end of the year.](/img/PC_chart.jpg)
-The added useability alongside the SEO benefit Google provides sites that are mobile friendly benefitted us greatly leading into the holiday season. The company saw a nearly **30% increase** in conversions compared to the previous year, and nearly **90% higher** add-to-cart rate.
+![Chart showing site conversions from June through December of 2017. The chart spikes at the point marked by the updated site's launch and continues a much-improved trend through the end of the year.](/img/PC_chart.jpg)
+The added useability alongside the SEO benefits Google provides sites that are mobile-friendly benefitted us greatly leading into the holiday season. The company saw a nearly **30% increase** in conversions compared to the previous year, and nearly **90% higher** add-to-cart rate.
 
 So if you haven't made your site mobile friendly, do it! Do it now!
+
+_By: Travis Franklin_

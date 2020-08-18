@@ -31,3 +31,5 @@ This is the first project requested of me at the Udacity Front End Nanodegree. I
 - Customize CSS styles applied at minimum to paragraph and heading elements.
 
 - Grid-Based Layout
+
+_By: Travis Franklin_

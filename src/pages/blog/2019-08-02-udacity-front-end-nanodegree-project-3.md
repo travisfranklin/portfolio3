@@ -14,7 +14,7 @@ tags:
 ---
 
 #### Udacity FEND Project 3
-This project focused on using HTML/CSS for styling and vanilla Javascript including classes and IIFEs for controlling interaction of sprites within the canvas api. You can access the game [here](https://travisfranklin.github.io/FEND-Project3/).
+This project focused on using HTML/CSS for styling and vanilla Javascript including classes and IIFEs for controlling the interaction of sprites within the canvas API. You can access the game [here](https://travisfranklin.github.io/FEND-Project3/).
 
 #### How to play
 - Undertake a journey to the top of the game board.  
@@ -25,7 +25,7 @@ This project focused on using HTML/CSS for styling and vanilla Javascript includ
 - As your score increases, the creatures will become more difficult to evade.  
 - As any wanderer knows, every journey has an end. Yours will end when your vitality reaches zero. The higher your score, the more journeys you experienced. That is your final goal.  
 
-This may sound bleak, but take heart—see how far your travels will take you before your reach the road's end.
+This may sound bleak but take heart—see how far your travels will take you before you reach the road's end.
 
 #### Sources:
 All imagery used has been edited from their original design to better fit the medium.
@@ -42,4 +42,6 @@ All imagery used has been edited from their original design to better fit the me
 - Add score boost pickups.  
 - Make individual enemy sprites randomize each time they reach the edge of the canvas to portray a better variety of baddies.  
 - Add sounds and background music so it feels like a legit game  
-- Add some foreground animation (like fog passing over the canvas) for better immersion  
+- Add some foreground animation (like fog passing over the canvas) for better immersion
+
+_By: Travis Franklin_

@@ -93,3 +93,5 @@ The code for this site was primarily from [Udacity](https://github.com/udacity/f
 - [Handlebars](http://handlebarsjs.com)
 - [Jasmine](https://jasmine.github.io)
 - [jQuery](http://jquery.com)
+
+_By: Travis Franklin_
